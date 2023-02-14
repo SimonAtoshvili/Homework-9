@@ -7,10 +7,18 @@
 /* Header */
 
 header {
-    width: 100%;
+    max-width: inherit;
+    width: inherit;
+    padding: 10px 0 0 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    z-index: 1;
 }
 
 nav {
@@ -20,4 +28,150 @@ nav {
 ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    margin: 0 10px;
+    padding: 5px;
+}
+li:hover {
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+
+/* Section 1 */
+
+.section1 {
+    background-image: url("../Images/background-img.png");
+    height: 2414px;
+    position: relative
+}
+
+.above-text {
+    width: 70%;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    color: #C0B4B4;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Section 2 */
+
+.section2 {
+    width: 100%;
+    height: 1070px;
+    /* padding: 5% 0 20% 0; */
+    background-color: #393838;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+h2 {
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-top: 5%;
+}
+
+.cards {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.card {
+    width: 30%;
+    
+}
+
+.card-img {
+    width: 100%;
+}
+
+/* Article */
+
+article {
+    width: 100%;
+    height: 860px;
+    margin: 0 auto;
+    background-color: #2C2929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.box {
+    width: 80%;
+    height: 560px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.art-div {
+    width: 49%;
+    height: 100%;
+    background-color: #8E8B8B;
+    color: #FFFFFF;
+    padding: 60px;
+    text-align: justify;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.box-img {
+    width: 49%;
+    height: 100%;
+}
+
+h3 {
+    font-size: 64px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 100px;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    padding: 85px 150px;
+    background-color: #393838;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-end {
+    font-size: 60px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.fa-square-envelope {
+    color: #F2C00F;
+}
+
+.fa-instagram,
+.fa-square-facebook{
+    color: #F8F8F8;
 }
